@@ -4,8 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "npm run start",
-    "healthcheckPath": "/",
+    "startCommand": "npx serve -s dist -l ${PORT:-3000}",
     "restartPolicyType": "ON_FAILURE"
   }
 }
